@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <title>Starbucks Project</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="center-menu">
+            <div class="logo">
+                <img src="assets/logo.png" />
+            </div>
+            <div class="items-menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">What's new</a>
+            </div>
+        </div>
+    </header>
+    <section class="banner-e-texto">
+        <div class="texto">
+            <h1>It's not just Coffee</h1>
+            <h1>It's <b>StarBucks</b></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies euismod congue. Fusce sit
+                amet ipsum at risus maximus sagittis. Donec id orci ut turpis viverra dignissim id quis sem. Nam eget
+                lacus malesuada, scelerisque justo sit amet, cursus turpis. Donec a efficitur ex. Maecenas nunc sapien,
+                semper sed iaculis sed, pharetra a magna. Curabitur a enim euismod, dignissim nisi eu, semper dui. Etiam
+                non risus elit. Proin a lorem ut risus cursus hendrerit ac sed lorem.
+            </p>
+            <a class="btn-learn-more" href="#">
+                Learn More
+            </a>
+        </div>
+        <div class="banner">
+            <div class="green-banner">
+                <div class="img-banner" id="img-copo">
+                    <img src="assets/img1.png" />
+                </div>
+                <div class="media-social">
+                    <a href="#"><img src="assets/facebook.png" /></a>
+                    <a href="#"><img src="assets/instagram.png" /></a>
+                    <a href="#"><img src="assets/twitter.png" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        elanim = document.getElementById('img-copo')
+            .addEventListener('mouseenter', function() {
+                var banner = document.querySelector('.img-banner img')
+                banner.style.width = '500px';
+                banner.style.transition = '0.5s'
+            });
+        elanim = document.getElementById('img-copo')
+            .addEventListener('mouseout', function(){
+                var banner = document.querySelector('.img-banner img')
+                banner.style.width = '400px';
+            });
+
+            //nova feature, click troca o sabor
+
+        // elanim = document.getElementById('img-copo')
+        //     .addEventListener('click', function(){
+        //         banner2 = document.getElementsByClassName('img-banner')
+        //         banner2[0].innerHTML = ''
+        //     });
+    </script>
+</body>
+
+</html>
